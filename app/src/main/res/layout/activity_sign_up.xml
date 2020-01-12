@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appback"
+    tools:context=".Scenario.ScenarioSignUp.Controller.SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/booking" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_25sdp"
+                android:paddingRight="@dimen/_25sdp"
+                android:layout_alignParentLeft="true">
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/rounded"
+                    android:gravity="center_vertical|right"
+                    android:hint="الاسم"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:imeOptions="actionDone"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_40sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_13ssp" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/rounded"
+                    android:gravity="center_vertical|right"
+                    android:hint="كلمة السر"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_40sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_13ssp" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/rounded"
+                    android:gravity="center_vertical|right"
+                    android:hint="الهاتف"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:imeOptions="actionDone"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_40sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_13ssp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/rounded"
+                    android:gravity="center_vertical|right"
+                    android:hint="البريد الالكتروني"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:imeOptions="actionDone"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_40sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_13ssp" />
+
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/appback"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="تسجيل"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_13ssp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_6ssp"
+                android:layout_marginRight="@dimen/_35sdp"
+                android:src="@drawable/user" />
+
+            <ImageView
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_46ssp"
+                android:layout_marginRight="@dimen/_35sdp"
+                android:src="@drawable/lock" />
+
+            <ImageView
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_87sdp"
+                android:layout_marginRight="@dimen/_35sdp"
+                app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+            <ImageView
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_127sdp"
+                android:layout_marginRight="@dimen/_35sdp"
+                app:srcCompat="@drawable/ic_email_black_24dp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/goToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_19sdp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:text="تسجيل الدخول؟"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_13ssp" />
+
+        <ImageView
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="1sp"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:src="@drawable/line" />
+    </LinearLayout>
+</LinearLayout>
