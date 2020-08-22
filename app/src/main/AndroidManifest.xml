@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.besolutions.drbooking">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.besolutions.drbookingOriginal">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -14,16 +15,17 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@drawable/drbooking"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Design.Light.NoActionBar">
-        <activity android:name=".Scenario.ScenarioChangePassword.Controller.Change_Password"></activity>
-        <activity android:name=".Scenario.ScenarioMyFavorit.Controller.My_Favorite" />
-        <activity android:name=".Scenario.ScenarioEditProfile.Controller.Edit_Profile" />
-        <activity android:name=".Scenario.ScenarioAppointment.Controller.Appointment" />
-        <activity android:name=".Scenario.ScenarioMyProduct.Controller.My_Product" />
-        <activity android:name=".Scenario.ScenarioProductDetails.Controller.Product_Details" />
-        <activity android:name=".Scenario.ScenarioConfirmReservation.Controller.Confirm_Reservation" />
+        android:theme="@style/Theme.Design.Light.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.besolutions.drbookingOriginal.Scenario.ScenarioChangePassword.Controller.Change_Password"></activity>
+        <activity android:name="com.besolutions.drbookingOriginal.Scenario.ScenarioMyFavorit.Controller.My_Favorite" />
+        <activity android:name="com.besolutions.drbookingOriginal.Scenario.ScenarioEditProfile.Controller.Edit_Profile" />
+        <activity android:name="com.besolutions.drbookingOriginal.Scenario.ScenarioAppointment.Controller.Appointment" />
+        <activity android:name="com.besolutions.drbookingOriginal.Scenario.ScenarioMyProduct.Controller.My_Product" />
+        <activity android:name="com.besolutions.drbookingOriginal.Scenario.ScenarioProductDetails.Controller.Product_Details" />
+        <activity android:name="com.besolutions.drbookingOriginal.Scenario.ScenarioConfirmReservation.Controller.Confirm_Reservation" />
 
-        <receiver android:name=".Scenario.ScenarioConnection.Controller.NetworkChangeReceiver">
+        <receiver android:name="com.besolutions.drbookingOriginal.Scenario.ScenarioConnection.Controller.NetworkChangeReceiver">
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
@@ -33,19 +35,19 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyA1w9SLlQr-Z3aPRVKSGWNX94NL3NJznzQ" />
 
-        <activity android:name=".Scenario.ScenarioMapDoctorLocation.Controller.map_doctor_location" />
-        <activity android:name=".Scenario.ScenarioSignIn.Controller.ForgetPassword" />
-        <activity android:name=".Scenario.ScenarioFragments.SearchFragment.Controller.Search_Fragment" />
-        <activity android:name=".Scenario.ScenarioHome.Controller.SplashScreen">
+        <activity android:name="com.besolutions.drbookingOriginal.Scenario.ScenarioMapDoctorLocation.Controller.map_doctor_location" />
+        <activity android:name="com.besolutions.drbookingOriginal.Scenario.ScenarioSignIn.Controller.ForgetPassword" />
+        <activity android:name="com.besolutions.drbookingOriginal.Scenario.ScenarioFragments.SearchFragment.Controller.Search_Fragment" />
+        <activity android:name="com.besolutions.drbookingOriginal.Scenario.ScenarioHome.Controller.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Scenario.ScenarioSignUp.Controller.SignUp" />
-        <activity android:name=".Scenario.ScenarioSignIn.Controller.SignIn" />
-        <activity android:name=".Scenario.ScenarioHome.Controller.MainActivity" />
+        <activity android:name="com.besolutions.drbookingOriginal.Scenario.ScenarioSignUp.Controller.SignUp" />
+        <activity android:name="com.besolutions.drbookingOriginal.Scenario.ScenarioSignIn.Controller.SignIn" />
+        <activity android:name="com.besolutions.drbookingOriginal.Scenario.ScenarioHome.Controller.MainActivity" />
     </application>
 
 </manifest>

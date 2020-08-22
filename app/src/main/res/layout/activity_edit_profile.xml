@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/appback"
-    tools:context="com.besolutions.drbooking.Scenario.ScenarioEditProfile.Controller.Edit_Profile">
+    tools:context="com.besolutions.drbookingOriginal.Scenario.ScenarioEditProfile.Controller.Edit_Profile">
 
     <RelativeLayout
         android:layout_width="match_parent"

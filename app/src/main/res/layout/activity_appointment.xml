@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.besolutions.drbooking.Scenario.ScenarioAppointment.Controller.Appointment">
+    tools:context="com.besolutions.drbookingOriginal.Scenario.ScenarioAppointment.Controller.Appointment">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
